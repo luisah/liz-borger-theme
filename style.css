@@ -30,7 +30,6 @@ and Blueprint http://www.blueprintcss.org/
 
 .item {
   width:  150px;
-  float: left;
 }
 
 /* Structure
@@ -97,7 +96,7 @@ a:hover, a:focus {
 
 .happy-face {
    position: absolute;
-   right: 0;
+   right: 30px;
    top: 0;
 }
 
@@ -106,8 +105,13 @@ a:hover, a:focus {
    z-index: 999999;
 }
 
-.projects-list, .about-menu {
+.projects-list {
    max-width: 300px;
+   cursor: pointer;
+}
+
+.about-menu {
+   max-width: 600px;
    cursor: pointer;
 }
 
@@ -124,8 +128,12 @@ a:hover, a:focus {
    padding: 0 90px;
 }
 
-.projects-list .list-inline > li, .about-menu .list-inline > li {
+.projects-list .list-inline > li {
    padding: 0 39px;
+}
+
+.about-menu .list-inline > li {
+   padding: 0 90px;
 }
 
 .menu-click .list-inline > li:first-child {
@@ -148,7 +156,7 @@ a:hover, a:focus {
 }
 
 .projects-list {
-   right: 0;
+   right: 30px;
 }
 
 .list-content {
@@ -170,12 +178,13 @@ a:hover, a:focus {
 ------------------------------------------------------*/
 .navbar {
    background-color: transparent;
-   border-color: transparent;
-   padding-bottom: 30px;
+   border-color: black;
+   padding-bottom: 31px;
 }
 
 .header-container {
    max-width: 1235px;
+   width: 97%;
    margin: 0 auto;
    position: relative;
 }
@@ -243,7 +252,7 @@ a:hover, a:focus {
 @media only screen and (max-width: 650px) {
 
    .header-container {
-      padding: 0 15px;
+      padding: 0 10px;
    }
 
    .about-content {
@@ -255,7 +264,7 @@ a:hover, a:focus {
    }
 
    .happy-face {
-      right: 15px;
+      right: 8px;
    }
 
    .projects-list {
@@ -266,6 +275,7 @@ a:hover, a:focus {
 
    .list-mobile {
       display: block;
+      right: 0;
    }
 
    .site-content {
@@ -288,6 +298,19 @@ a:hover, a:focus {
 
    .back-to-top .col-xs-10 {
       width: 78.333333%;
+   }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+   .item {
+     width:  130px;
+   }
+
+   .item img {
+      max-width: 100%;
+      height: auto;
    }
 
 }
