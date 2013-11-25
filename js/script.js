@@ -18,8 +18,6 @@
 
 		imgLoad.on( 'always', function( instance ) {
 
-			console.log("images loaded");
-
 			if ( $(window).width() <= 360 ) {
 
 				$container.masonry({
