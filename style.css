@@ -47,6 +47,7 @@ body {
 }
 
 .container {
+   width: 96.3%;
    padding: 0;
 }
 
@@ -177,8 +178,9 @@ a:hover, a:focus {
 /* Navbar top
 ------------------------------------------------------*/
 .navbar {
-   background-color: transparent;
-   border-color: black;
+   background-color: #fff;
+   background-color: rgba(255,255,255,0.9);
+   border-color: transparent;
    padding-bottom: 31px;
 }
 
@@ -280,7 +282,6 @@ a:hover, a:focus {
 
    .site-content {
       margin-top: 18px;
-      padding: 0 15px;
       clear: both;
    }
 

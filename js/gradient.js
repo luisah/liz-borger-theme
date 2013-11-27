@@ -71,3 +71,4 @@
 jQuery('.home.gradient').gradual();
 jQuery('.home .about-content').gradual();
 jQuery('.home .list-content').gradual();
+jQuery('.home .navbar').gradual();

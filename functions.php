@@ -60,11 +60,6 @@ function liz_borger_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
-
-	/**
-	 * Disable admin bar front end.
-	 */
-	show_admin_bar( false );
 }
 endif; // liz_borger_setup
 add_action( 'after_setup_theme', 'liz_borger_setup' );
