@@ -40,8 +40,6 @@
 
 		});
 
-		$container.masonry('reloadItems');
-
 		$( ".about-menu" ).click(function() {
 			$( ".about-menu ul" ).hide();
 			$( ".about-content" ).show();
