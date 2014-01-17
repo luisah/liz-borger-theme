@@ -165,7 +165,9 @@ function getPostAttachments($postId, $size) {
 	$images =& get_children( array (
 		'post_parent' => $postId,
 		'post_type' => 'attachment',
-		'post_mime_type' => 'image'
+		'post_mime_type' => 'image', 
+		'order' => 'ASC', 
+		'orderby' => 'menu_order ID'
 	));
 
 	if ( empty($images) ) {
